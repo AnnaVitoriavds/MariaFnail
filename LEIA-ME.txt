@@ -1,0 +1,48 @@
+SITE — MARIA FERREIRA NAIL DESIGNER
+====================================
+
+COMO ABRIR
+  Dê dois cliques em index.html (abre no navegador).
+  Para colocar no ar: envie a pasta inteira para Netlify, Vercel, GitHub Pages
+  ou para a hospedagem do seu domínio.
+
+COMO ADICIONAR AS FOTOS (pasta "images")
+  Salve as fotos com EXATAMENTE estes nomes (formato .jpg):
+
+    sobre.jpg        -> foto da Maria (seção "Sobre")
+    galeria-1.jpg    -> trabalho 1 (vertical)
+    galeria-2.jpg    -> trabalho 2
+    galeria-3.jpg    -> trabalho 3
+    galeria-4.jpg    -> trabalho 4 (horizontal)
+    galeria-5.jpg    -> trabalho 5
+    galeria-6.jpg    -> trabalho 6 (vertical)
+    galeria-7.jpg    -> trabalho 7
+    galeria-8.jpg    -> trabalho 8
+
+  A galeria é um carrossel estilo feed do Instagram. As fotos aparecem
+  INTEIRAS (sem corte); o fundo do quadro é a própria foto desfocada.
+  Enquanto a foto não existir, aparece uma moldura elegante no lugar.
+  Para editar as legendas, abra index.html e procure por "ig__caption".
+  Para ter mais de 8 fotos, copie um bloco <article class="ig__post"> inteiro.
+  Dica: use fotos de até ~300 KB cada para o site carregar rápido.
+
+COMO TROCAR O WHATSAPP
+  Abra js/main.js e edite a linha do topo:
+    const WHATSAPP = "5561998378967";
+  Depois, no index.html, procure por "5561998378967" e troque também
+  (botão flutuante e cartões de contato).
+
+COMO FUNCIONA O AGENDAMENTO
+  A cliente escolhe nome, serviço, data e período, vê a prévia da mensagem
+  e toca em "Enviar pelo WhatsApp". O WhatsApp abre com tudo preenchido.
+
+ESTRUTURA
+  index.html   -> conteúdo
+  css/style.css -> visual e animações
+  js/main.js   -> interações e agendamento
+  images/      -> logo e fotos
+
+SOBRE A LOGO
+  images/logo.png           -> logo SEM fundo (PNG transparente), usada no topo do site
+  images/logo-original.png  -> logo original com a parede (usada no ícone da aba e na prévia de compartilhamento)
+  Para trocar a logo no site, substitua images/logo.png por outro PNG transparente.
